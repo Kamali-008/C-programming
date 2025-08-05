@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main(){
+
+char choice;
+printf("Enter your option + - / * ");
+scanf("%c",&choice);
+int a,b;
+printf("Enter two input:");
+scanf("%d %d",&a,&b);
+switch(choice){
+  case '+':
+	    printf("SUm is %d",a+b);
+ 	    break;
+  case '-':
+	   printf("Difference is %d",a-b);
+	   break;
+  case '/':
+	    printf("Division is %d",a/b);
+ 	    break;
+  case '*':
+	   printf("Multiplication is %d",a*b);
+	   break;
+  default:
+	   printf("No options available");
+
+ }
+return 0;
+}
