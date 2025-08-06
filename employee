@@ -1,0 +1,42 @@
+#include<stdio.h>
+struct employee{
+int id;
+char ename[20];
+char cname[20];
+char benifits[50];
+int insmoney;
+};
+int main(){
+int n,id;
+printf("enter a employee count:");
+scanf("%d",&n);
+struct employee ep[n];
+printf("enter the employee information:");
+for(int i=0; i<n;i++){
+scanf("%d",&ep[i]. id);
+scanf("%s",&ep[i]. ename);
+scanf("%s",&ep[i]. cname);
+scanf("%s",&ep[i].benifits);
+scanf("%d",&ep[i].insmoney);
+}
+printf("enter the employee id to to search:");
+scanf("%d",&id);
+for (int i=0;i<n;i++){
+        if(id==ep[i].id){
+printf("empolyee :%d information\n",i+1);
+printf("emp id :%d",ep[i].id);
+printf("\nemp name:%s",ep[i].ename);
+printf("\ncpy name:%s",ep[i].cname);
+printf("\nbrnifits:%s",ep[i].benifits);
+printf("\nINS mon:%d",ep[i].insmoney);
+}}
+return 0;
+}
+
+
+
+
+
+
+
+
